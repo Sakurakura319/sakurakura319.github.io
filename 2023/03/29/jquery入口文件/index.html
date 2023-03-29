@@ -185,7 +185,13 @@
     </div>
 
     <div class="content" v-pre>
-        
+        <h1 id="jquery入口文件"><a href="#jquery入口文件" class="headerlink" title="jquery入口文件"></a>jquery入口文件</h1><p>jquery入口文件： jQuery 入口文件通常是将网页中其他 JavaScript 文件合并为一个更小的文件，以减少 HTTP 请求次数和文件大小，从而优化网页性能。以下是一个简单的示例 jQuery 入口文件： </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入jQeury和要使用的插件</span></span><br><span class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">&#x27;jquery&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;bootstrap&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 导出全局变量</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">jQuery</span> = <span class="variable language_">window</span>.<span class="property">$</span> = $;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 绑定文档加载事件</span></span><br><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 在这里写你要执行的代码</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>在这个例子中，我们首先通过 import 语句导入了 jQuery 和 Bootstrap 的库文件，并将他们存储在一个变量 <code>$</code> 中。接着我们将 <code>$</code> 变量绑定到 <code>window.jQuery</code> 和 <code>window.$</code> 中，使得 <code>$</code> 可以作为一个全局变量被引用。</p>
+<p>最后，在文档完成加载时使用 <code>$(document).ready()</code> 函数去执行我们要执行的代码，这样可以确保我们的代码只有在页面元素完全加载后再运行。</p>
+<p>当入口文件被浏览器加载时，它会自动处理所有依赖项（其他 JavaScript 文件和 CSS 文件），并将它们合并为一个包含所有代码的文件。这可以避免浏览器多次请求不同的文件，同时减小网页的总体积，提高性能。</p>
+
     </div>
 
     
