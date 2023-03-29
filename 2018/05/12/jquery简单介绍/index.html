@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEllO || jquery入口文件</title>
+    <title>HEllO || jquery简单介绍</title>
     <meta name="author" content="saku">
     <meta name="description" content=" ">
     <meta name="keywords" content=" ">
@@ -169,14 +169,14 @@
 <link rel="stylesheet" href="/css/post-body.css">
 <div class="article">
     <div>
-        <h1>jquery入口文件 </h1>
+        <h1>jquery简单介绍 </h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <a-icon type="calendar" theme="filled" />
             </span>
-            2023/3/29
+            2018/5/12
         </span>
 
         
@@ -185,12 +185,36 @@
     </div>
 
     <div class="content" v-pre>
-        <h1 id="jquery入口文件"><a href="#jquery入口文件" class="headerlink" title="jquery入口文件"></a>jquery入口文件</h1><p>jquery入口文件： jQuery 入口文件通常是将网页中其他 JavaScript 文件合并为一个更小的文件，以减少 HTTP 请求次数和文件大小，从而优化网页性能。以下是一个简单的示例 jQuery 入口文件： </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入jQeury和要使用的插件</span></span><br><span class="line"><span class="keyword">import</span> $ <span class="keyword">from</span> <span class="string">&#x27;jquery&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;bootstrap&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 导出全局变量</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">jQuery</span> = <span class="variable language_">window</span>.<span class="property">$</span> = $;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 绑定文档加载事件</span></span><br><span class="line">$(<span class="variable language_">document</span>).<span class="title function_">ready</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 在这里写你要执行的代码</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+        <h1 id="jquery简介"><a href="#jquery简介" class="headerlink" title="jquery简介"></a>jquery简介</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。目前超过90%的网站都使用了jQuery库，jQuery的宗旨：写的更少，做得更多</p>
+<h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>官方地址：<a target="_blank" rel="noopener" href="https://jquery.com/">点击打开</a></p>
+<p>官方文档：<a target="_blank" rel="noopener" href="https://api.jquery.com/">点击打开</a></p>
+<h3 id="jquery版本介绍"><a href="#jquery版本介绍" class="headerlink" title="jquery版本介绍"></a>jquery版本介绍</h3><ul>
+<li><strong>1.x</strong><ul>
+<li>兼容老版本IE</li>
+<li>文件较大，但兼容性最好</li>
+</ul>
+</li>
+<li>2.x<ul>
+<li>部分IE8及以下版本不支持</li>
+<li>文件较小，执行效率更高</li>
+</ul>
+</li>
+<li>3.x<ul>
+<li>完全不再支持IE8及以下版本</li>
+<li>提供了一些新的API</li>
+<li>提供不包含AJAX/动画API的版本</li>
+</ul>
+</li>
+</ul>
+<h3 id="jquery引入方式"><a href="#jquery引入方式" class="headerlink" title="jquery引入方式"></a>jquery引入方式</h3><ul>
+<li><p>本地引入：将jQuery下载下来，然后导入项目中，使用script标签进行引用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;jquery-1.9.1.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>    </span><br></pre></td></tr></table></figure></li>
+<li><p>CDN引入：使用远程CDN资源库在线引入，避免了文件下载</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>    </span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="jquery快速使用"><a href="#jquery快速使用" class="headerlink" title="jquery快速使用"></a>jquery快速使用</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>jQuery<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    $(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 请将jQuery代码书写在这里 ...</span></span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">alert</span>(<span class="string">&#x27;Hello,World!&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    &#125;);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>在这个例子中，我们首先通过 import 语句导入了 jQuery 和 Bootstrap 的库文件，并将他们存储在一个变量 <code>$</code> 中。接着我们将 <code>$</code> 变量绑定到 <code>window.jQuery</code> 和 <code>window.$</code> 中，使得 <code>$</code> 可以作为一个全局变量被引用。</p>
-<p>最后，在文档完成加载时使用 <code>$(document).ready()</code> 函数去执行我们要执行的代码，这样可以确保我们的代码只有在页面元素完全加载后再运行。</p>
-<p>当入口文件被浏览器加载时，它会自动处理所有依赖项（其他 JavaScript 文件和 CSS 文件），并将它们合并为一个包含所有代码的文件。这可以避免浏览器多次请求不同的文件，同时减小网页的总体积，提高性能。</p>
+<h3 id="jquery两大核心"><a href="#jquery两大核心" class="headerlink" title="jquery两大核心"></a>jquery两大核心</h3><p>jQuery核心函数：即： $() 或 jQuery()，jQuery定义了这个全局的函数供我们调用，它既可作为一般函数调用，且传递的参数类型不同/格式不同，功能就完全不同，也可作为对象调用其定义好的方法，此时 $ 就是一个工具对象。<br>jQuery核心对象：即执行jQuery核心函数返回的对象，jQuery对象内部包含的是dom元素对象的伪数组(可能只有一个元素)，jQuery对象拥有很多有用的属性和方法，让程序员能方便的操作dom，调用jQuery对象的任何方法后返回的还是当前jQuery对象。</p>
 
     </div>
 

@@ -197,7 +197,7 @@
 
 <div class="post">
 
-    <a href="/2023/03/29/jquery入口文件/">
+    <a href="/2018/05/16/jquery入口文件/">
         <h2>
             jquery入口文件
         </h2>
@@ -211,7 +211,7 @@
             <span class="icon">
                 <a-icon type="calendar" theme="filled" />
             </span>
-            2023/3/29
+            2018/5/16
         </span>
 
     </div>
@@ -236,16 +236,16 @@
         
     </div>
 
-    <a href="/2023/03/29/jquery入口文件/ " class="go-post">
+    <a href="/2018/05/16/jquery入口文件/ " class="go-post">
         阅读全文
     </a>
 </div>
 
 <div class="post">
 
-    <a href="/2023/03/29/hello-world/">
+    <a href="/2018/05/12/jquery简单介绍/">
         <h2>
-            Hello World
+            jquery简单介绍
         </h2>
     </a>
 
@@ -257,7 +257,7 @@
             <span class="icon">
                 <a-icon type="calendar" theme="filled" />
             </span>
-            2023/3/29
+            2018/5/12
         </span>
 
     </div>
@@ -266,19 +266,36 @@
         <div class="content" v-pre>
             
             
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+            <h1 id="jquery简介"><a href="#jquery简介" class="headerlink" title="jquery简介"></a>jquery简介</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。目前超过90%的网站都使用了jQuery库，jQuery的宗旨：写的更少，做得更多</p>
+<h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>官方地址：<a target="_blank" rel="noopener" href="https://jquery.com/">点击打开</a></p>
+<p>官方文档：<a target="_blank" rel="noopener" href="https://api.jquery.com/">点击打开</a></p>
+<h3 id="jquery版本介绍"><a href="#jquery版本介绍" class="headerlink" title="jquery版本介绍"></a>jquery版本介绍</h3><ul>
+<li><strong>1.x</strong><ul>
+<li>兼容老版本IE</li>
+<li>文件较大，但兼容性最好</li>
+</ul>
+</li>
+<li>2.x<ul>
+<li>部分IE8及以下版本不支持</li>
+<li>文件较小，执行效率更高</li>
+</ul>
+</li>
+<li>3.x<ul>
+<li>完全不再支持IE8及以下版本</li>
+<li>提供了一些新的API</li>
+<li>提供不包含AJAX/动画API的版本</li>
+</ul>
+</li>
+</ul>
+<h3 id="jquery引入方式"><a href="#jquery引入方式" class="headerlink" title="jquery引入方式"></a>jquery引入方式</h3><ul>
+<li><p>本地引入：将jQuery下载下来，然后导入项目中，使用script标签进行引用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;jquery-1.9.1.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>    </span><br></pre></td></tr></table></figure></li>
+<li><p>CDN引入：使用远程CDN资源库在线引入，避免了文件下载</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>    </span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="jquery快速使用"><a href="#jquery快速使用" class="headerlink" title="jquery快速使用"></a>jquery快速使用</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>jQuery<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    $(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 请将jQuery代码书写在这里 ...</span></span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">alert</span>(<span class="string">&#x27;Hello,World!&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    &#125;);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="jquery两大核心"><a href="#jquery两大核心" class="headerlink" title="jquery两大核心"></a>jquery两大核心</h3><p>jQuery核心函数：即： $() 或 jQuery()，jQuery定义了这个全局的函数供我们调用，它既可作为一般函数调用，且传递的参数类型不同/格式不同，功能就完全不同，也可作为对象调用其定义好的方法，此时 $ 就是一个工具对象。<br>jQuery核心对象：即执行jQuery核心函数返回的对象，jQuery对象内部包含的是dom元素对象的伪数组(可能只有一个元素)，jQuery对象拥有很多有用的属性和方法，让程序员能方便的操作dom，调用jQuery对象的任何方法后返回的还是当前jQuery对象。</p>
 
             
         </div>
@@ -289,7 +306,7 @@
         
     </div>
 
-    <a href="/2023/03/29/hello-world/ " class="go-post">
+    <a href="/2018/05/12/jquery简单介绍/ " class="go-post">
         阅读全文
     </a>
 </div>
