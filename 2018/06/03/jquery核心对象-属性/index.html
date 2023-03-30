@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAKU HEllO || </title>
+    <title>SAKU HEllO || jquery核心对象--属性</title>
     <meta name="author" content="saku">
     <meta name="description" content=" ">
     <meta name="keywords" content=" ">
@@ -165,171 +165,70 @@
                 </div>
 
                 <div id="main">
-                    
-<div id="archives">
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2023/6/11" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2023/6/11</div>
-                <a href="/2023/06/11/jquery核心对象-操作/">
-                    <h3>jquery核心对象--操作</h3>
-                </a>
-                <div class="info">
-                    
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>jquery核心对象--属性 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2018/6/3
+        </span>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/6/20" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/6/20</div>
-                <a href="/2018/06/20/jquery核心对象-动画/">
-                    <h3>jquery核心对象--动画</h3>
-                </a>
-                <div class="info">
-                    
+        
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/6/17" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/6/17</div>
-                <a href="/2018/06/17/jquery核心对象-遍历/">
-                    <h3>jquery核心对象--遍历</h3>
-                </a>
-                <div class="info">
-                    
+        
+    </div>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/6/11" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/6/11</div>
-                <a href="/2018/06/11/jquery核心对象-事件/">
-                    <h3>jquery核心对象--事件</h3>
-                </a>
-                <div class="info">
-                    
+    <div class="content" v-pre>
+        <h3 id="jquery核心对象–属性"><a href="#jquery核心对象–属性" class="headerlink" title="jquery核心对象–属性"></a>jquery核心对象–属性</h3><h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><h5 id="attr"><a href="#attr" class="headerlink" title="attr"></a>attr</h5><p> 方法描述：专门操作属性值为非布尔值的属性，该方法读写一体。 </p>
+<h5 id="prop"><a href="#prop" class="headerlink" title="prop()"></a>prop()</h5><p> 方法描述：专门操作属性值为布尔值的属性，该方法读写一体。 </p>
+<h5 id="val"><a href="#val" class="headerlink" title="val()"></a>val()</h5><p> 方法描述：该方法主要用于获取表单元素的值和设置表单元素的值，该方法读写一体。 </p>
+<h4 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h4><h5 id="css"><a href="#css" class="headerlink" title="css()"></a>css()</h5><p> 方法描述：获取匹配元素集合中的第一个元素的样式属性的计算值或设置每个匹配元素的一个或多个CSS属性。 </p>
+<h5 id="addClsss"><a href="#addClsss" class="headerlink" title="addClsss()"></a>addClsss()</h5><p> 方法描述：为每个匹配的元素添加指定的样式类名。 </p>
+<h5 id="removeClass"><a href="#removeClass" class="headerlink" title="removeClass()"></a>removeClass()</h5><p> 方法描述：移除集合中每个匹配元素上一个，多个或全部样式。 </p>
+<h5 id="hasClass"><a href="#hasClass" class="headerlink" title="hasClass()"></a>hasClass()</h5><p> 方法描述：确定任何一个匹配元素是否有被分配给定的样式类。 </p>
+<h5 id="toggleClass"><a href="#toggleClass" class="headerlink" title="toggleClass()"></a>toggleClass()</h5><p> 方法描述：为匹配的元素集合中的每个元素上添加或删除一个或多个样式类，取决于这个样式类是否存在。 </p>
+<blockquote>
+<p>注：如果存在（不存在）就删除（添加）一个样式类 </p>
+</blockquote>
+<h4 id="尺寸"><a href="#尺寸" class="headerlink" title="尺寸"></a>尺寸</h4><h5 id="width"><a href="#width" class="headerlink" title="width()"></a>width()</h5><p>方法描述：获取内容元素width的值。</p>
+<h5 id="height"><a href="#height" class="headerlink" title="height()"></a>height()</h5><p>方法描述：获取内容元素height的值。</p>
+<h5 id="innerWidth"><a href="#innerWidth" class="headerlink" title="innerWidth()"></a>innerWidth()</h5><p>方法描述：获取内容元素width+padding的值。</p>
+<h5 id="innerHeight"><a href="#innerHeight" class="headerlink" title="innerHeight()"></a>innerHeight()</h5><p>方法描述：获取内容元素height+padding的值。</p>
+<h5 id="outerWidth"><a href="#outerWidth" class="headerlink" title="outerWidth()"></a>outerWidth()</h5><p>方法描述：outerWidth(false/true)，获取内容元素width+padding+border的值，如果是true再加上margin的值。</p>
+<h5 id="outerHeight"><a href="#outerHeight" class="headerlink" title="outerHeight()"></a>outerHeight()</h5><p>方法描述：outerHeight(false/true)，获取内容元素height+padding+border的值，如果是true再加上margin的值。</p>
+<h4 id="位置"><a href="#位置" class="headerlink" title="位置"></a>位置</h4><h5 id="offset"><a href="#offset" class="headerlink" title="offset()"></a>offset()</h5><p> 方法描述：相对页面左上角的坐标。 </p>
+<h5 id="position"><a href="#position" class="headerlink" title="position()"></a>position()</h5><p> 方法描述：相对于父元素左上角的坐标。 </p>
+<h5 id="scrollLeft"><a href="#scrollLeft" class="headerlink" title="scrollLeft()"></a>scrollLeft()</h5><p>方法描述：读取/设置滚动条的X坐标，该方法读写合一。</p>
+<p>读取页面滚动条的Y坐标(兼容chrome和IE)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> scrollLeft = $(<span class="variable language_">document</span>.<span class="property">body</span>).<span class="title function_">scrollLeft</span>()+$(<span class="variable language_">document</span>.<span class="property">documentElement</span>).<span class="title function_">scrollLeft</span>();</span><br></pre></td></tr></table></figure>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/6/3" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/6/3</div>
-                <a href="/2018/06/03/jquery核心对象-属性/">
-                    <h3>jquery核心对象--属性</h3>
-                </a>
-                <div class="info">
-                    
+<p> 设置页面滚动条滚动到指定位置(兼容chrome和IE) </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;body,html&#x27;</span>).<span class="title function_">scrollLeft</span>(<span class="number">60</span>);</span><br></pre></td></tr></table></figure>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/5/27" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/5/27</div>
-                <a href="/2018/05/27/jquery-ajax/">
-                    <h3>jquery-ajax</h3>
-                </a>
-                <div class="info">
-                    
+<h5 id="scrollTop"><a href="#scrollTop" class="headerlink" title="scrollTop()"></a>scrollTop()</h5><p>方法描述：读取/设置滚动条的Y坐标，该方法读写合一。</p>
+<p>读取页面滚动条的Y坐标(兼容chrome和IE)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> scrollTop = $(<span class="variable language_">document</span>.<span class="property">body</span>).<span class="title function_">scrollTop</span>()+$(<span class="variable language_">document</span>.<span class="property">documentElement</span>).<span class="title function_">scrollTop</span>();</span><br></pre></td></tr></table></figure>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/5/16" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/5/16</div>
-                <a href="/2018/05/16/jquery入口文件/">
-                    <h3>jquery入口文件</h3>
-                </a>
-                <div class="info">
-                    
+<p> 设置页面滚动条滚动到指定位置(兼容chrome和IE) </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;body,html&#x27;</span>).<span class="title function_">scrollTop</span>(<span class="number">60</span>);</span><br></pre></td></tr></table></figure>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/5/14" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/5/14</div>
-                <a href="/2018/05/14/jquery选择器/">
-                    <h3>jquery选择器</h3>
-                </a>
-                <div class="info">
-                    
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
-    
-    <a-timeline>
-        <a-timeline-item timestamp="2018/5/12" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/5/12</div>
-                <a href="/2018/05/12/jquery简单介绍/">
-                    <h3>jquery简单介绍</h3>
-                </a>
-                <div class="info">
-                    
+    </div>
 
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
     
-    <a-timeline>
-        <a-timeline-item timestamp="2018/3/20" placement="top" color="#a5c2f5">
-            <a-card hoverable>
-                <div class="item-time">2018/3/20</div>
-                <a href="/2018/03/20/jquery工具/">
-                    <h3>jquery工具</h3>
-                </a>
-                <div class="info">
-                    
-
-                    
-                </div>
-            </a-card>
-        </a-timeline-item>
-    </a-timeline>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
     
 </div>
-
                      
 <footer id="footer">
     <div class="footer-wrap">
@@ -392,6 +291,21 @@
             }
         }
     })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'hexo-theme-particle',      // The repository of store comments,
+        owner: 'korilin',
+        admin: ['korilin'],
+        language: 'en',
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
 </script>
 
 </body>
