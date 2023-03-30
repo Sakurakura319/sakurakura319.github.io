@@ -197,6 +197,69 @@
 
 <div class="post">
 
+    <a href="/2018/05/27/jquery-ajax/">
+        <h2>
+            jquery-ajax
+        </h2>
+    </a>
+
+    <div class="category-and-date">
+
+        
+
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2018/5/27
+        </span>
+
+    </div>
+
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            
+            <h3 id="ajax"><a href="#ajax" class="headerlink" title="ajax"></a>ajax</h3><h4 id="ajax-1"><a href="#ajax-1" class="headerlink" title="$.ajax"></a>$.ajax</h4><p> 方法描述：执行一个异步的HTTP的请求。 </p>
+<p> <strong>需求描述：执行一个异步的HTTP GET请求，从服务器加载数据。</strong> </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="title function_">ajax</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/user/login&#x27;</span>,</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">    <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">username</span>: <span class="string">&#x27;zhangsan&#x27;</span>,</span><br><span class="line">        <span class="attr">password</span>: <span class="string">&#x27;123456&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">dataType</span>: <span class="string">&#x27;text&#x27;</span>,</span><br><span class="line">    <span class="attr">success</span>: <span class="keyword">function</span> (<span class="params">response</span>) &#123;</span><br><span class="line">        <span class="title function_">alert</span>(response);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">error</span>: <span class="keyword">function</span> (<span class="params">response</span>) &#123;</span><br><span class="line">        <span class="title function_">alert</span>(response);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p> <strong>需求描述：执行一个异步的HTTP POST请求，从服务器加载数据</strong> .</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="title function_">ajax</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;/user/login&#x27;</span>,</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;post&#x27;</span>,</span><br><span class="line">    <span class="attr">data</span>: &#123;</span><br><span class="line">        <span class="attr">username</span>: <span class="string">&#x27;zhangsan&#x27;</span>,</span><br><span class="line">        <span class="attr">password</span>: <span class="string">&#x27;123456&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">dataType</span>: <span class="string">&#x27;text&#x27;</span>,</span><br><span class="line">    <span class="attr">success</span>: <span class="keyword">function</span> (<span class="params">response</span>) &#123;</span><br><span class="line">        <span class="title function_">alert</span>(response);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">error</span>: <span class="keyword">function</span> (<span class="params">response</span>) &#123;</span><br><span class="line">        <span class="title function_">alert</span>(response);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="get"><a href="#get" class="headerlink" title="$.get"></a>$.get</h4><p> 方法描述：使用一个HTTP GET请求从服务器加载数据。 </p>
+<p>这是一个ajax功能的缩写，这相当于:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="title function_">ajax</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: url,</span><br><span class="line">    <span class="attr">data</span>: data,</span><br><span class="line">    <span class="attr">success</span>: success,</span><br><span class="line">    <span class="attr">dataType</span>: dataType</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="title function_">get</span>(<span class="string">&#x27;/user/login&#x27;</span>, &#123;<span class="attr">username</span>: <span class="string">&#x27;zhangsan&#x27;</span>, <span class="attr">password</span>: <span class="string">&#x27;123456&#x27;</span>&#125;, <span class="keyword">function</span> (<span class="params">response</span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(response);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="post"><a href="#post" class="headerlink" title="$.post"></a>$.post</h4><p>方法描述：使用一个HTTP POST请求从服务器加载数据。</p>
+<p>这是一个ajax功能的缩写，这相当于:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="title function_">ajax</span>(&#123;</span><br><span class="line">    <span class="attr">url</span>: url,</span><br><span class="line">    <span class="attr">data</span>: data,</span><br><span class="line">    <span class="attr">success</span>: success,</span><br><span class="line">    <span class="attr">dataType</span>: dataType</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.<span class="title function_">post</span>(<span class="string">&#x27;/user/login&#x27;</span>, &#123;<span class="attr">username</span>: <span class="string">&#x27;zhangsan&#x27;</span>, <span class="attr">password</span>: <span class="string">&#x27;123456&#x27;</span>&#125;, <span class="keyword">function</span> (<span class="params">response</span>) &#123;</span><br><span class="line">    <span class="title function_">alert</span>(response);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+            
+        </div>
+    </div>
+
+    <div class="post-tags">
+        
+        
+    </div>
+
+    <a href="/2018/05/27/jquery-ajax/ " class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+
     <a href="/2018/05/16/jquery入口文件/">
         <h2>
             jquery入口文件
@@ -441,7 +504,12 @@
         <div class="content" v-pre>
             
             
-            
+            <h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><h4 id="each方法"><a href="#each方法" class="headerlink" title="$.each方法"></a>$.each方法</h4><p> 方法描述：一个通用的迭代函数，它可以用来无缝迭代对象和数组。数组和类似数组的对象通过一个长度属性（如一个函数的参数对象）来迭代数字索引，从0到length - 1，其他对象通过其属性名进行迭代。 </p>
+<h4 id="trim方法"><a href="#trim方法" class="headerlink" title="$.trim方法"></a>$.trim方法</h4><p> 方法描述：去掉字符串起始和结尾的空格。 </p>
+<h4 id="type方法"><a href="#type方法" class="headerlink" title="$.type方法"></a>$.type方法</h4><p> 方法描述：确定JavaScript 对象的类型。 </p>
+<h4 id="isArray方法"><a href="#isArray方法" class="headerlink" title="$.isArray方法"></a>$.isArray方法</h4><p> 方法描述：用来测试指定对象是否为一个数组。 </p>
+<h4 id="isFunction方法"><a href="#isFunction方法" class="headerlink" title="$.isFunction方法"></a>$.isFunction方法</h4><p> 方法描述：用来测试指定对象是否为一个函数。 </p>
+
             
         </div>
     </div>
