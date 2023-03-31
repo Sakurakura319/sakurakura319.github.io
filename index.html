@@ -379,6 +379,121 @@
 
 <div class="post">
 
+    <a href="/2023/03/31/bootstrap简介/">
+        <h2>
+            
+        </h2>
+    </a>
+
+    <div class="category-and-date">
+
+        
+
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2023/3/31
+        </span>
+
+    </div>
+
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            
+            <h1 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h1><h2 id="一、Bootstrap是什么"><a href="#一、Bootstrap是什么" class="headerlink" title="一、Bootstrap是什么"></a>一、Bootstrap是什么</h2><p>Bootstrap诞生于2011年，来自Twitter公司，是目前最受欢迎的前端框架</p>
+<p>是一个用于快速开发Web应用程序和网站的前端框架</p>
+<p>Bootstrap是基于HTML、CSS、JS的，简洁灵活，使得Web开发更加快捷</p>
+<p>概述：Bootstrap是一个建立一个页面，就可以在三个终端(PC端、平板、手机)上完美展示的响应式前端框架</p>
+<h2 id="二、为什么要用Bootstrap"><a href="#二、为什么要用Bootstrap" class="headerlink" title="二、为什么要用Bootstrap"></a>二、为什么要用Bootstrap</h2><p>因为Bootstrap是一个简洁、直观、强悍的前端开发框架，让web开发更迅速、更容易上手。</p>
+<h2 id="三、如何使用Bootstrap"><a href="#三、如何使用Bootstrap" class="headerlink" title="三、如何使用Bootstrap"></a>三、如何使用Bootstrap</h2><p>1.下载Bootstrap库 <a target="_blank" rel="noopener" href="https://v4.bootcss.com/">https://v4.bootcss.com/</a></p>
+<p>2.页面中引入库</p>
+<p>jquery-3.3.1.js：jQuery库【注意：必须在Bootstrap核心库引入之前引入jQuery库】</p>
+<p>bootstrap.css：Bootstrap核心样式【添加到head标签中】</p>
+
+            
+        </div>
+    </div>
+
+    <div class="post-tags">
+        
+        
+    </div>
+
+    <a href="/2023/03/31/bootstrap简介/ " class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+
+    <a href="/2018/06/23/jquery插件/">
+        <h2>
+            jquery插件
+        </h2>
+    </a>
+
+    <div class="category-and-date">
+
+        
+
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2018/6/23
+        </span>
+
+    </div>
+
+    <div class="excerpt">
+        <div class="content" v-pre>
+            
+            
+            <h3 id="jquery插件"><a href="#jquery插件" class="headerlink" title="jquery插件"></a>jquery插件</h3><h4 id="jquery工具扩展"><a href="#jquery工具扩展" class="headerlink" title="jquery工具扩展"></a>jquery工具扩展</h4><p> 给 <strong>jQuery工具</strong> 添加4个工具方法： </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">min</span>(a, b) : 返回较小的值</span><br><span class="line"><span class="title function_">max</span>(c, d) : 返回较大的值</span><br><span class="line"><span class="title function_">leftTrim</span>()  : 去掉字符串左边的空格</span><br><span class="line"><span class="title function_">rightTrim</span>() : 去掉字符串右边的空格</span><br></pre></td></tr></table></figure>
+
+
+
+<p>实现方法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 扩展jQuery工具的方法</span></span><br><span class="line">$.<span class="title function_">extend</span>(&#123;</span><br><span class="line">    <span class="attr">min</span>: <span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> a &lt; b ? a : b</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">max</span>: <span class="keyword">function</span> (<span class="params">a, b</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> a &gt; b ? a : b</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">leftTrim</span>: <span class="keyword">function</span> (<span class="params">str</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> str.<span class="title function_">replace</span>(<span class="regexp">/^\s+/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">rightTrim</span>: <span class="keyword">function</span> (<span class="params">str</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> str.<span class="title function_">replace</span>(<span class="regexp">/\s+$/</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试扩展jQuery工具的方法</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>($.<span class="title function_">min</span>(<span class="number">3</span>, <span class="number">5</span>));</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>($.<span class="title function_">max</span>(<span class="number">3</span>, <span class="number">5</span>));</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;-----&#x27;</span> + $.<span class="title function_">leftTrim</span>(<span class="string">&#x27;     hello     &#x27;</span>) + <span class="string">&#x27;-----&#x27;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;-----&#x27;</span> + $.<span class="title function_">rightTrim</span>(<span class="string">&#x27;     hello     &#x27;</span>) + <span class="string">&#x27;-----&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h4 id="扩展jQuery对象"><a href="#扩展jQuery对象" class="headerlink" title="扩展jQuery对象"></a>扩展jQuery对象</h4><p>​     给 <strong>jQuery对象</strong> 添加3个功能方法： </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">checkAll</span>()     : 全选</span><br><span class="line"><span class="title function_">unCheckAll</span>()   : 全不选</span><br><span class="line"><span class="title function_">reverseCheck</span>() : 全反选</span><br></pre></td></tr></table></figure>
+
+
+
+<p>实现方法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 扩展jQuery对象的方法</span></span><br><span class="line">$.fn.<span class="title function_">extend</span>(&#123;</span><br><span class="line">    <span class="attr">checkAll</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>, <span class="literal">true</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">unCheckAll</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">prop</span>(<span class="string">&#x27;checked&#x27;</span>, <span class="literal">false</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">reverseCheck</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">each</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">            <span class="variable language_">this</span>.<span class="property">checked</span> = !<span class="variable language_">this</span>.<span class="property">checked</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;items&quot;</span> <span class="attr">value</span>=<span class="string">&quot;足球&quot;</span>/&gt;</span>足球</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;items&quot;</span> <span class="attr">value</span>=<span class="string">&quot;篮球&quot;</span>/&gt;</span>篮球</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;items&quot;</span> <span class="attr">value</span>=<span class="string">&quot;羽毛球&quot;</span>/&gt;</span>羽毛球</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span> <span class="attr">name</span>=<span class="string">&quot;items&quot;</span> <span class="attr">value</span>=<span class="string">&quot;乒乓球&quot;</span>/&gt;</span>乒乓球</span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">id</span>=<span class="string">&quot;checkedAllBtn&quot;</span> <span class="attr">value</span>=<span class="string">&quot;全 选&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">id</span>=<span class="string">&quot;checkedNoBtn&quot;</span> <span class="attr">value</span>=<span class="string">&quot;全不选&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">id</span>=<span class="string">&quot;reverseCheckedBtn&quot;</span> <span class="attr">value</span>=<span class="string">&quot;全反选&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试扩展jQuery对象的方法</span></span><br><span class="line"><span class="keyword">var</span> $items = $(<span class="string">&#x27;:checkbox[name=items]&#x27;</span>);</span><br><span class="line">$(<span class="string">&#x27;#checkedAllBtn&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $items.<span class="title function_">checkAll</span>();</span><br><span class="line">&#125;);</span><br><span class="line">$(<span class="string">&#x27;#checkedNoBtn&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $items.<span class="title function_">unCheckAll</span>();</span><br><span class="line">&#125;);</span><br><span class="line">$(<span class="string">&#x27;#reverseCheckedBtn&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $items.<span class="title function_">reverseCheck</span>();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+            
+        </div>
+    </div>
+
+    <div class="post-tags">
+        
+        
+    </div>
+
+    <a href="/2018/06/23/jquery插件/ " class="go-post">
+        阅读全文
+    </a>
+</div>
+
+<div class="post">
+
     <a href="/2018/06/20/jquery核心对象-动画/">
         <h2>
             jquery核心对象--动画
@@ -402,7 +517,88 @@
         <div class="content" v-pre>
             
             
-            <h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3>
+            <h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><h4 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h4><h5 id="hide"><a href="#hide" class="headerlink" title="hide()"></a>hide()</h5><p> 方法描述：隐藏元素。 </p>
+<p>​     <strong>创建一个显示div，然后隐藏该元素</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">hide</span>();</span><br></pre></td></tr></table></figure>
+
+<h5 id="show"><a href="#show" class="headerlink" title="show()"></a>show()</h5><p> 方法描述：显示元素。 </p>
+<p>​     <strong>创建一个隐藏div，然后显示该元素</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">show</span>();</span><br></pre></td></tr></table></figure>
+
+<h5 id="toggle"><a href="#toggle" class="headerlink" title="toggle()"></a>toggle()</h5><p> 方法描述：如果隐藏就设置为显示，如果显示就设置为隐藏 </p>
+<p>​     <strong>创建一个按钮，控制div显示和隐藏</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>隐藏/显示<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;button&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">toggle</span>();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h4><h5 id="fadeIn"><a href="#fadeIn" class="headerlink" title="fadeIn()"></a>fadeIn()</h5><p> 方法描述：通过淡入的方式显示匹配元素。 </p>
+<p>​     <strong>创建一个按钮，控制div缓慢淡入</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>淡入<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;button&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">fadeIn</span>(<span class="string">&#x27;slow&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="fadeOut"><a href="#fadeOut" class="headerlink" title="fadeOut()"></a>fadeOut()</h5><p> 方法描述：通过淡出的方式隐藏匹配元素。 </p>
+<p>​     <strong>创建一个按钮，控制div缓慢淡出</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>淡出<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;button&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">fadeOut</span>(<span class="string">&#x27;slow&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="fadeToggle"><a href="#fadeToggle" class="headerlink" title="fadeToggle()"></a>fadeToggle()</h5><p> 方法描述：用淡入淡出动画显示或隐藏一个匹配元素。 </p>
+<p>​     <strong>创建一个按钮，控制div淡入和淡出</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>淡出/淡入<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;button&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">fadeToggle</span>(<span class="string">&#x27;slow&#x27;</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="滑动"><a href="#滑动" class="headerlink" title="滑动"></a>滑动</h4><h5 id="slideDown"><a href="#slideDown" class="headerlink" title="slideDown()"></a>slideDown()</h5><p> 方法描述：用滑动动画显示一个匹配元素。 </p>
+<p>​     <strong>创建一个按钮，控制div滑动显示</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>滑动显示<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;button&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">slideDown</span>();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="slideUp"><a href="#slideUp" class="headerlink" title="slideUp()"></a>slideUp()</h5><p> 方法描述：用滑动动画隐藏一个匹配元素。 </p>
+<p>​     <strong>创建一个按钮，控制div滑动隐藏</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>滑动隐藏<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;button&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">slideUp</span>();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="slideToggle"><a href="#slideToggle" class="headerlink" title="slideToggle()"></a>slideToggle()</h5><p> 方法描述：用滑动动画显示或隐藏一个匹配元素。 </p>
+<p>​     <strong>创建一个按钮，控制div滑动显示和滑动隐藏</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: coral;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>滑动隐藏/滑动显示<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;button&#x27;</span>).<span class="title function_">click</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    $(<span class="string">&#x27;.box&#x27;</span>).<span class="title function_">slideToggle</span>();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h4><h5 id="animate"><a href="#animate" class="headerlink" title="animate()"></a>animate()</h5><p> 方法描述：根据一组 CSS 属性，执行自定义动画，并且支持链式调用。 </p>
+<p>​     <strong>创建一个div，默认div宽高100px，背景颜色为黑色，先让div宽度变为200px，再让div高度变为200px</strong> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>自定义动画<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">&#x27;.box&#x27;</span>)</span><br><span class="line">.<span class="title function_">animate</span>(&#123;</span><br><span class="line">    <span class="attr">width</span>: <span class="string">&#x27;200&#x27;</span></span><br><span class="line">&#125;)</span><br><span class="line">.<span class="title function_">animate</span>(&#123;</span><br><span class="line">    <span class="attr">height</span>: <span class="string">&#x27;200&#x27;</span>,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h5 id="stop"><a href="#stop" class="headerlink" title="stop()"></a>stop()</h5><p> 方法描述：停止匹配元素当前正在运行的动画。 </p>
+
             
         </div>
     </div>
@@ -1025,123 +1221,6 @@
     </a>
 </div>
 
-<div class="post">
-
-    <a href="/2018/05/12/jquery简单介绍/">
-        <h2>
-            jquery简单介绍
-        </h2>
-    </a>
-
-    <div class="category-and-date">
-
-        
-
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2018/5/12
-        </span>
-
-    </div>
-
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <h1 id="jquery简介"><a href="#jquery简介" class="headerlink" title="jquery简介"></a>jquery简介</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。目前超过90%的网站都使用了jQuery库，jQuery的宗旨：写的更少，做得更多</p>
-<h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p>官方地址：<a target="_blank" rel="noopener" href="https://jquery.com/">点击打开</a></p>
-<p>官方文档：<a target="_blank" rel="noopener" href="https://api.jquery.com/">点击打开</a></p>
-<h3 id="jquery版本介绍"><a href="#jquery版本介绍" class="headerlink" title="jquery版本介绍"></a>jquery版本介绍</h3><ul>
-<li><strong>1.x</strong><ul>
-<li>兼容老版本IE</li>
-<li>文件较大，但兼容性最好</li>
-</ul>
-</li>
-<li>2.x<ul>
-<li>部分IE8及以下版本不支持</li>
-<li>文件较小，执行效率更高</li>
-</ul>
-</li>
-<li>3.x<ul>
-<li>完全不再支持IE8及以下版本</li>
-<li>提供了一些新的API</li>
-<li>提供不包含AJAX/动画API的版本</li>
-</ul>
-</li>
-</ul>
-<h3 id="jquery引入方式"><a href="#jquery引入方式" class="headerlink" title="jquery引入方式"></a>jquery引入方式</h3><p>本地引入：将jQuery下载下来，然后导入项目中，使用script标签进行引用</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;jquery-1.9.1.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>    </span><br></pre></td></tr></table></figure>
-
-<p>CDN引入：使用远程CDN资源库在线引入，避免了文件下载</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>    </span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="jquery快速使用"><a href="#jquery快速使用" class="headerlink" title="jquery快速使用"></a>jquery快速使用</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>jQuery<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    $(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">        <span class="comment">// 请将jQuery代码书写在这里 ...</span></span></span><br><span class="line"><span class="language-javascript">        <span class="title function_">alert</span>(<span class="string">&#x27;Hello,World!&#x27;</span>);</span></span><br><span class="line"><span class="language-javascript">    &#125;);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="jquery两大核心"><a href="#jquery两大核心" class="headerlink" title="jquery两大核心"></a>jquery两大核心</h3><p>jQuery核心函数：即： $() 或 jQuery()，jQuery定义了这个全局的函数供我们调用，它既可作为一般函数调用，且传递的参数类型不同/格式不同，功能就完全不同，也可作为对象调用其定义好的方法，此时 $ 就是一个工具对象。<br>jQuery核心对象：即执行jQuery核心函数返回的对象，jQuery对象内部包含的是dom元素对象的伪数组(可能只有一个元素)，jQuery对象拥有很多有用的属性和方法，让程序员能方便的操作dom，调用jQuery对象的任何方法后返回的还是当前jQuery对象。</p>
-
-            
-        </div>
-    </div>
-
-    <div class="post-tags">
-        
-        
-    </div>
-
-    <a href="/2018/05/12/jquery简单介绍/ " class="go-post">
-        阅读全文
-    </a>
-</div>
-
-<div class="post">
-
-    <a href="/2018/03/20/jquery工具/">
-        <h2>
-            jquery工具
-        </h2>
-    </a>
-
-    <div class="category-and-date">
-
-        
-
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2018/3/20
-        </span>
-
-    </div>
-
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><h4 id="each方法"><a href="#each方法" class="headerlink" title="$.each方法"></a>$.each方法</h4><p> 方法描述：一个通用的迭代函数，它可以用来无缝迭代对象和数组。数组和类似数组的对象通过一个长度属性（如一个函数的参数对象）来迭代数字索引，从0到length - 1，其他对象通过其属性名进行迭代。 </p>
-<h4 id="trim方法"><a href="#trim方法" class="headerlink" title="$.trim方法"></a>$.trim方法</h4><p> 方法描述：去掉字符串起始和结尾的空格。 </p>
-<h4 id="type方法"><a href="#type方法" class="headerlink" title="$.type方法"></a>$.type方法</h4><p> 方法描述：确定JavaScript 对象的类型。 </p>
-<h4 id="isArray方法"><a href="#isArray方法" class="headerlink" title="$.isArray方法"></a>$.isArray方法</h4><p> 方法描述：用来测试指定对象是否为一个数组。 </p>
-<h4 id="isFunction方法"><a href="#isFunction方法" class="headerlink" title="$.isFunction方法"></a>$.isFunction方法</h4><p> 方法描述：用来测试指定对象是否为一个函数。 </p>
-
-            
-        </div>
-    </div>
-
-    <div class="post-tags">
-        
-        
-    </div>
-
-    <a href="/2018/03/20/jquery工具/ " class="go-post">
-        阅读全文
-    </a>
-</div>
-
 
              
 <div class="page-current">
@@ -1159,10 +1238,28 @@
         </span>
 
         
+        <span>
+            <a href="/page/2/">
+                <span class="page-num">
+                    2
+                </span>
+            </a>
+            
+
+            
+
+        </span>
+        
 
     </div>
 
     <div class="next">
+        
+        <a href="/page/2/ ">
+            <span class="page-num">
+                <a-icon type="caret-right" theme="filled" />
+            </span>
+        </a>
         
     </div>
 
